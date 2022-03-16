@@ -1,0 +1,70 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button color="dark"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Asmaul Husna</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-card>
+  <video
+  autoplay muted controls
+  width="100%"
+  control="controls"
+  preload="metadata"
+  autoplay="autoplay"
+  webkit-playsinline="a'webkit-playsinline"
+  class="videoPlayer">
+<source src="assets/test.mp4" type="video/mp4"/>
+</video>
+</ion-card>
+<p>Manfaat-manfaat membaca Asmaul Husna</p>
+<p><h5>1. Membuka Pintu Rezeki</h5><p>
+<p><h5>2. Menyembuhkan penyakit</h5><p>
+<p><h5>3. Mendapat keselamatan</h5><p>
+ <p><h5>  4. Mendapat keampunan</h5><p> 
+  <p><h5>  5. Memperoleh kemudahan</h5><p>
+    <p><h5> 6. Memperoleh keturunan</h5><p>
+      <p><h5>7. Menumbuhkan rasa percaya diri</h5><p>
+        <p><h5> 8. Mengendalikan nafsu</h5><p>
+          <p><h5> 9. Menjaga keharmonisan rumah tangga</h5><p>
+            <p><h5> 10. Mencerdaskan otak</h5><p>
+              <p><h5>  11. Terhindar dari sifat lupa</h5><p>
+                <p><h5> 12.  Mendekatkan diri pada Allah</h5><p>
+                  <p><h5>  13. Menjadi muslim yang sejati</h5><p>
+                    <p><h5>  14. Memperkuat persatuan dan kesatuan</h5><p>
+                      <p><h5> 15. Memperkuat keimanan seorang hamba</h5><p>
+              
+          
+</ion-content>
+
+
+<ion-footer>
+<p>dasdas</p>
+<ion-tabs>
+  <ion-tab-bar>
+    <ion-tab-button [routerLink]="['/home']" tab="schedule">
+      <ion-icon name="home"></ion-icon>
+      <ion-label>Home</ion-label>
+      
+    </ion-tab-button>
+
+    <ion-tab-button [routerLink]="['/selawat']" tab="speakers">
+      <ion-icon name="newspaper"></ion-icon>
+      <ion-label>Selawat&Zikir</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button [routerLink]="['/doamain']" tab="map">
+      <img src="assets/hands.png" width="55%">
+      <ion-label>Doa</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button [routerLink]="['/contact']" tab="about">
+      <ion-icon name="alert-outline"></ion-icon>
+      <ion-label>Report</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
+</ion-footer>

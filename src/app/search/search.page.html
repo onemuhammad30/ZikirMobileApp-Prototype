@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons>
+      <ion-title color="dark">SEARCH</ion-title>
+      <ion-back-button color="dark"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+  <ion-toolbar>
+    <ion-searchbar
+    (ionChange)="setFilteredItems()"
+    [(ngModel)]="searchTerm"
+    ></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+
+  <ion-content>
+<div *ngFor="let item of items">
+  <ion-item [routerLink]="item.page">
+    {{item.title}}
+  </ion-item>
+</div>
+</ion-content>
+
+
+

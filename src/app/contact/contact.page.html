@@ -1,0 +1,72 @@
+<ion-header>
+  <ion-toolbar color="favorite">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">Report</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+  <div class="ion-padding">
+
+    <ion-text color="dark">
+      <p>Please fill up enquiry and we will be in touch with you soon</p>
+    </ion-text>
+
+    <ion-item>
+      <ion-label position="floating">Name</ion-label>
+      <ion-input type="text" [(ngModel)]="post.name" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type="email" placeholder="your@gmail.com" [(ngModel)]="post.email" required></ion-input>
+    </ion-item>
+   
+    <ion-item>
+      <ion-label>Enquire Type</ion-label>
+      <ion-select value="General" okText="Okay" [(ngModel)]="post.enquiry" cancelText="Dismiss">
+        <ion-select-option value="General">General</ion-select-option>
+        
+        <ion-select-option value="Complaint">Complaint</ion-select-option>
+        <ion-select-option value="Others">Others</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Message</ion-label>
+      <ion-input [(ngModel)]="post.message"></ion-input>
+    </ion-item>
+
+    <ion-button expand="block" color="primary" (click)="createPost(post)" (click)="showAlert()">
+      <ion-icon slot="start" name="send"></ion-icon>
+      Send
+    </ion-button>
+   </div>
+   <ion-content color="light">
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button [routerLink]="['/home']" tab="schedule">
+        <ion-icon name="home"></ion-icon>
+        <ion-label>Home</ion-label>
+        
+      </ion-tab-button>
+  
+      <ion-tab-button [routerLink]="['/selawat']" tab="speakers">
+        <ion-icon name="newspaper"></ion-icon>
+        <ion-label>Selawat&Zikir</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button [routerLink]="['/doamain']" tab="map">
+        <img src="assets/hands.png" width="55%">
+        <ion-label>Doa</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button [routerLink]="['/contact']" tab="about">
+        <ion-icon name="alert-outline"></ion-icon>
+        <ion-label>Report</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-content>

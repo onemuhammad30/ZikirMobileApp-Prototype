@@ -1,0 +1,67 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button color="dark"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Zikir Harian</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button [routerLink]="['/zikir2']" expand="full" fill="outline">
+    <ion-icon slot="end" name="book-outline"></ion-icon>
+    Zikir Isnin
+   </ion-button>
+   <ion-button [routerLink]="['/zikirselasa']" expand="full" fill="outline">
+    <ion-icon slot="end" name="book-outline"></ion-icon>
+    Zikir Selasa
+   </ion-button>
+   <ion-button [routerLink]="['/zikirrabu']" expand="full" fill="outline">
+    <ion-icon slot="end" name="book-outline"></ion-icon>
+    Zikir Rabu
+   </ion-button>
+   <ion-button [routerLink]="['/zikirkhamis']" expand="full" fill="outline">
+    <ion-icon slot="end" name="book-outline"></ion-icon>
+    Zikir Khamis
+   </ion-button>
+   <ion-button [routerLink]="['/zikirjumaat']" expand="full" fill="outline">
+    <ion-icon slot="end" name="book-outline"></ion-icon>
+    Zikir Jumaat
+   </ion-button>
+   <ion-button [routerLink]="['/zikirsabtu']" expand="full" fill="outline">
+    <ion-icon slot="end" name="book-outline"></ion-icon>
+    Zikir Sabtu
+   </ion-button>
+   <ion-button [routerLink]="['/zikirahad']" expand="full" fill="outline">
+    <ion-icon slot="end" name="book-outline"></ion-icon>
+    Zikir Ahad
+   </ion-button>
+</ion-content>
+<ion-footer>
+  <p>dasdas</p>
+  <ion-tabs>
+    <ion-tab-bar>
+      <ion-tab-button [routerLink]="['/home']" tab="schedule">
+        <ion-icon name="home"></ion-icon>
+        <ion-label>Home</ion-label>
+        
+      </ion-tab-button>
+  
+      <ion-tab-button [routerLink]="['/selawat']" tab="speakers">
+        <ion-icon name="newspaper"></ion-icon>
+        <ion-label>Selawat&Zikir</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button [routerLink]="['/doamain']" tab="map">
+        <img src="assets/hands.png" width="55%">
+        <ion-label>Doa</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button [routerLink]="['/contact']" tab="about">
+        <ion-icon name="alert-outline"></ion-icon>
+        <ion-label>Report</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+  </ion-footer>
+  

@@ -1,0 +1,85 @@
+
+
+<ion-header>
+  <ion-toolbar class="ion-text-center">
+     <ion-title>Main Menu</ion-title>
+     <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu" color="dark"></ion-menu-button>
+     </ion-buttons>
+     <ion-buttons slot="end">
+      <ion-button class="notification" [routerLink]="['/search']">
+        <ion-icon name="search-outline" color="dark"></ion-icon>
+      </ion-button>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-img src="/assets/pembukailmu.png"></ion-img>
+<ion-button [routerLink]="['/zikir3']" expand="full" fill="outline">
+  <ion-icon slot="end" name="book-outline"></ion-icon>
+  Surah Al-Fatihah
+ </ion-button>
+
+<ion-button [routerLink]="['/zikir1']" expand="full" fill="outline">
+  <ion-icon slot="end" name="book-outline"></ion-icon>
+  Asmaul Husna
+ </ion-button>
+
+ <ion-button [routerLink]="['/kul1']" expand="full" fill="outline">
+  <ion-icon slot="end" name="book-outline"></ion-icon>
+  Surah Al-Ikhlas
+ </ion-button>
+ 
+ <ion-button [routerLink]="['/kul2']" expand="full" fill="outline">
+  <ion-icon slot="end" name="book-outline"></ion-icon>
+  Surah Al-Falaq
+ </ion-button>
+
+ <ion-button [routerLink]="['/kul3']" expand="full" fill="outline">
+  <ion-icon slot="end" name="book-outline"></ion-icon>
+  Surah An-Nas
+ </ion-button>
+
+ <ion-button [routerLink]="['/kul4']" expand="full" fill="outline">
+  <ion-icon slot="end" name="book-outline"></ion-icon>
+  Surah Al-Kafirun
+ </ion-button>
+
+ <ion-button [routerLink]="['/almulk']" expand="full" fill="outline">
+  <ion-icon slot="end" name="book-outline"></ion-icon>
+  Surah Al-Mulk
+ </ion-button>
+
+ <ion-button [routerLink]="['/kursi']" expand="full" fill="outline">
+  <ion-icon slot="end" name="book-outline"></ion-icon>
+  Ayat Kursi
+ </ion-button>
+
+<ion-content>
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button [routerLink]="['/home']" tab="schedule">
+        <ion-icon name="home"></ion-icon>
+        <ion-label>Home</ion-label>
+        
+      </ion-tab-button>
+  
+      <ion-tab-button [routerLink]="['/selawat']" tab="speakers">
+        <ion-icon name="newspaper"></ion-icon>
+        <ion-label>Selawat&Zikir</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button [routerLink]="['/doamain']" tab="map">
+        <img src="assets/hands.png" width="55%">
+        <ion-label>Doa</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button [routerLink]="['/contact']" tab="about">
+        <ion-icon name="alert-outline"></ion-icon>
+        <ion-label>Report</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-content>
+

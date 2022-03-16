@@ -1,0 +1,94 @@
+
+
+<ion-header>
+  <ion-toolbar class="ion-text-center">
+     <ion-title>Zikir</ion-title>
+     <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu" color="dark"></ion-menu-button>
+     </ion-buttons>
+     <ion-buttons slot="end">
+      <ion-button class="notification" [routerLink]="['/search']">
+        <ion-icon name="search-outline" color="dark"></ion-icon>
+      </ion-button>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-button color="success" [routerLink]="['/zikirharian']">Zikir-Zikir Harian</ion-button>
+<ion-button [routerLink]="['/selawat1']" expand="full" fill="outline">
+  <ion-icon slot="end" name="book-outline"></ion-icon>
+  Subhanallah
+ </ion-button>
+ <ion-button [routerLink]="['/z1']" expand="full" fill="outline">
+  <ion-icon slot="end" name="book-outline"></ion-icon>
+  Alhamdulillah
+ </ion-button>
+ <ion-button [routerLink]="['/z2']" expand="full" fill="outline">
+  <ion-icon slot="end" name="book-outline"></ion-icon>
+  Allahu Akbar
+ </ion-button>
+ <ion-button [routerLink]="['/z3']" expand="full" fill="outline">
+  <ion-icon slot="end" name="book-outline"></ion-icon>
+  Astagfirullah
+ </ion-button>
+ <ion-button [routerLink]="['/z4']" expand="full" fill="outline">
+  <ion-icon slot="end" name="book-outline"></ion-icon>
+  Laailaaha Illallah
+ </ion-button>
+ 
+
+
+
+
+  <ion-toolbar class="ion-text-center">
+<ion-title>Selawat</ion-title>
+  </ion-toolbar>
+
+<ion-button [routerLink]="['/s1']" expand="full" fill="outline">
+  <ion-icon slot="end" name="book-outline"></ion-icon>
+  Selawat Ibrahimiyah
+ </ion-button>
+ <ion-button [routerLink]="['/s2']" expand="full" fill="outline">
+  <ion-icon slot="end" name="book-outline"></ion-icon>
+  Selawat Munjiyat
+ </ion-button>
+ <ion-button [routerLink]="['/s3']" expand="full" fill="outline">
+  <ion-icon slot="end" name="book-outline"></ion-icon>
+  Selawat Syifa'
+ </ion-button>
+ <ion-button [routerLink]="['/s4']" expand="full" fill="outline">
+  <ion-icon slot="end" name="book-outline"></ion-icon>
+  Selawat Tafrijiyah
+ </ion-button>
+
+
+
+<ion-content>
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button [routerLink]="['/home']" tab="schedule">
+        <ion-icon name="home"></ion-icon>
+        <ion-label>Home</ion-label>
+        
+      </ion-tab-button>
+  
+      <ion-tab-button [routerLink]="['/selawat']" tab="speakers">
+        <ion-icon name="newspaper"></ion-icon>
+        <ion-label>Selawat&Zikir</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button [routerLink]="['/doamain']" tab="map">
+        <img src="assets/hands.png" width="55%">
+        <ion-label>Doa</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button [routerLink]="['/contact']" tab="about">
+        <ion-icon name="alert-outline"></ion-icon>
+        <ion-label>Report</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+
+</ion-content>
+
+

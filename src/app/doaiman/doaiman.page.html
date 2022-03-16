@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button color="dark"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Doa Mohon Ketetapan Iman</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-text>
+    <h2 class="ion-text-center">رَبَّنَا لاَ تُزِغْ قُلُوبَنَا بَعْدَ إِذْ هَدَيْتَنَا وَهَبْ لَنَا مِن لَّدُنكَ رَحْمَةً إِنَّكَ أَنتَ الْوَهَّابُ</h2>
+    </ion-text>
+   
+    <h6>Rabbana laa tuziq qulubana ba’da idz hadaitana wahab lana min-ladunka rahmah(tan), innaka antal wahab</h6>
+    
+    <h6>"Wahai Tuhan kami! Janganlah Engkau memesongkan hati kami sesudah Engkau beri petunjuk kepada kami, dan kurniakanlah kepada kami limpah rahmat dari sisiMu; sesungguhnya Engkau jualah Tuhan Yang melimpah-limpah pemberianNya”. (Surah A-li ‘Imraan: 8)</h6>
+  </ion-content>
+  <ion-footer>
+    <p>dasdas</p>
+    <ion-tabs>
+      <ion-tab-bar>
+        <ion-tab-button [routerLink]="['/home']" tab="schedule">
+          <ion-icon name="home"></ion-icon>
+          <ion-label>Home</ion-label>
+          
+        </ion-tab-button>
+    
+        <ion-tab-button [routerLink]="['/selawat']" tab="speakers">
+          <ion-icon name="newspaper"></ion-icon>
+          <ion-label>Selawat&Zikir</ion-label>
+        </ion-tab-button>
+    
+        <ion-tab-button [routerLink]="['/doamain']" tab="map">
+          <img src="assets/hands.png" width="55%">
+          <ion-label>Doa</ion-label>
+        </ion-tab-button>
+    
+        <ion-tab-button [routerLink]="['/contact']" tab="about">
+          <ion-icon name="alert-outline"></ion-icon>
+          <ion-label>Report</ion-label>
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+    </ion-footer>
+    

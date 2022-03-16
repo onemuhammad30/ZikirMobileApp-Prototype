@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button color="dark"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Doa Mohon<br> Keampunan</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-text>
+  <h2 class="ion-text-center">رَبَّنَا لاَ تُؤَاخِذْنَا إِن نَّسِينَا أَوْ أَخْطَأْنَا رَبَّنَا وَلاَ تَحْمِلْ عَلَيْنَا إِصْراً كَمَا حَمَلْتَهُ عَلَى الَّذِينَ مِن قَبْلِنَا رَبَّنَا وَلاَ تُحَمِّلْنَا مَا لاَ طَاقَةَ لَنَا بِهِ وَاعْفُ عَنَّا وَاغْفِرْ لَنَا وَارْحَمْنَا أَنتَ مَوْلاَنَا فَانصُرْنَا عَلَى الْقَوْمِ الْكَافِرِينَ</h2>
+  </ion-text>
+ 
+  <h6>Rabbana la-tua-khizna innasina au akhta’na, rabbana wala tahmil ‘alaina isran kama hamaltahu ‘alal lazina min qablina, rabanna wala tuhammilna ma la taqata lana bih(i), wa’fu ‘anna, wagfir lana, warhamna, anta maulana fansurna ‘alal qaumil kafirin.</h6>
+  
+  <h6>“Wahai Tuhan kami! Janganlah Engkau mengirakan kami salah jika kami lupa atau kami tersalah. Wahai Tuhan kami Janganlah Engkau bebankan kepada kami bebanan yang berat sebagaimana yang telah Engkau bebankan kepada orang-orang yang terdahulu daripada kami. Wahai Tuhan kami! Janganlah Engkau pikulkan kepada kami apa yang kami tidak terdaya memikulnya. Dan maafkanlah kesalahan kami, serta ampunkanlah dosa kami, dan berilah rahmat kepada kami. Engkaulah Penolong kami; oleh itu, tolonglah kami untuk mencapai kemenangan terhadap kaum-kaum yang kafir”. (Surah Al-Baqarah: 286)</h6>
+</ion-content>
+<ion-footer>
+  <p>dasdas</p>
+  <ion-tabs>
+    <ion-tab-bar>
+      <ion-tab-button [routerLink]="['/home']" tab="schedule">
+        <ion-icon name="home"></ion-icon>
+        <ion-label>Home</ion-label>
+        
+      </ion-tab-button>
+  
+      <ion-tab-button [routerLink]="['/selawat']" tab="speakers">
+        <ion-icon name="newspaper"></ion-icon>
+        <ion-label>Selawat&Zikir</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button [routerLink]="['/doamain']" tab="map">
+        <img src="assets/hands.png" width="55%">
+        <ion-label>Doa</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button [routerLink]="['/contact']" tab="about">
+        <ion-icon name="alert-outline"></ion-icon>
+        <ion-label>Report</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+  </ion-footer>
+  

@@ -1,0 +1,90 @@
+
+
+<ion-header>
+  <ion-toolbar class="ion-text-center">
+     <ion-title>Doa-Doa</ion-title>
+     <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu" color="dark"></ion-menu-button>
+     </ion-buttons>
+     <ion-buttons slot="end">
+      <ion-button class="notification" [routerLink]="['/search']">
+        <ion-icon name="search-outline" color="dark"></ion-icon>
+      </ion-button>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-button [routerLink]="['/doa']" expand="full" fill="outline">
+  <ion-icon slot="end" name="book-outline"></ion-icon>
+  Doa Ibu Bapa
+ </ion-button>
+ <ion-button [routerLink]="['/doakeampunan']" expand="full" fill="outline">
+  <ion-icon slot="end" name="book-outline"></ion-icon>
+  Doa Mohon Keampunan
+ </ion-button>
+ <ion-button [routerLink]="['/doakebahagian']" expand="full" fill="outline">
+  <ion-icon slot="end" name="book-outline"></ion-icon>
+  Doa Mohon Kebahagian<br> Di Dunia Dan Akhirat
+ </ion-button>
+ <ion-button [routerLink]="['/doaampunneraka']" expand="full" fill="outline">
+  <ion-icon slot="end" name="book-outline"></ion-icon>
+  Doa Mohon Keampunan Iman<br>Dan Diselamatkan Dari Neraka
+ </ion-button>
+ <ion-button [routerLink]="['/doakeamanan']" expand="full" fill="outline">
+  <ion-icon slot="end" name="book-outline"></ion-icon>
+  Doa Mohon Keamanan<br> Negara Dan Rezeki
+ </ion-button>
+ <ion-button [routerLink]="['/doakesabaran']" expand="full" fill="outline">
+  <ion-icon slot="end" name="book-outline"></ion-icon>
+  Doa Mohon Diberi Kesabaran
+ </ion-button>
+ <ion-button [routerLink]="['/doaketurunan']" expand="full" fill="outline">
+  <ion-icon slot="end" name="book-outline"></ion-icon>
+  Doa Mohon Keturunan<br>Yang Taat Kepada Allah
+ </ion-button>
+ <ion-button [routerLink]="['/doaiman']" expand="full" fill="outline">
+  <ion-icon slot="end" name="book-outline"></ion-icon>
+  Doa Mohon Ketetapan Iman
+ </ion-button>
+ <ion-button [routerLink]="['/doasiksa']" expand="full" fill="outline">
+  <ion-icon slot="end" name="book-outline"></ion-icon>
+  Doa Mohon Dipelihara<br> Dari Siksaan Neraka
+ </ion-button>
+ <ion-button [routerLink]="['/doatetap']" expand="full" fill="outline">
+  <ion-icon slot="end" name="book-outline"></ion-icon>
+  Doa Mohon Menetapkan Pendirian
+ </ion-button>
+
+
+
+
+
+<ion-content>
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button [routerLink]="['/home']" tab="schedule">
+        <ion-icon name="home"></ion-icon>
+        <ion-label>Home</ion-label>
+        
+      </ion-tab-button>
+  
+      <ion-tab-button [routerLink]="['/selawat']" tab="speakers">
+        <ion-icon name="newspaper"></ion-icon>
+        <ion-label>Selawat&Zikir</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button [routerLink]="['/doamain']" tab="map">
+        <img src="assets/hands.png" width="55%">
+        <ion-label>Doa</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button [routerLink]="['/contact']" tab="about">
+        <ion-icon name="alert-outline"></ion-icon>
+        <ion-label>Report</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+
+</ion-content>
+
+

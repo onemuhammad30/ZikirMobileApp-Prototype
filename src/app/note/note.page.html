@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar color="favorite">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">Notes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="light">
+  <div class="ion-padding">
+
+   
+
+    <ion-item>
+      <ion-label position="floating">Title</ion-label>
+      <ion-input type="text" [(ngModel)]="note.title" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Notes</ion-label>
+      <ion-input type="text" [(ngModel)]="note.note" required></ion-input>
+    </ion-item>
+   
+    
+      
+      <ion-label>Pick date</ion-label>
+      <br>
+      <ion-datetime
+        displayFormat="DD.MM.YYYY"
+        presentation="date"
+        [(ngModel)]="note.date"
+      ></ion-datetime>
+    
+  
+  
+
+    <ion-button expand="block" color="primary" (click)="createPost(note)">
+      <ion-icon slot="start" name="send"></ion-icon>
+      Save
+    </ion-button>
+<br>
+    <ion-button color="light" routerLink="/view-note" expand="block">View Notes</ion-button>
+   </div>
+</ion-content>

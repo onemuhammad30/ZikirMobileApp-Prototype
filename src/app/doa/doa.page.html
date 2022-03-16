@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button color="dark"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Doa Ibu Bapa</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-text>
+    <h2 class="ion-text-center">اَللَّهُمَّ اغْفِرْلِيْ ذُنُوْبِيْ وَلِوَالِدِيَّ وَارْحَمْهُمَا كَمَا رَبَّيَانِيْ صِغِيْرًا</h2>
+    </ion-text>
+   
+    <h6>Allahummagh firli zunubi wa li wa lidayya warhamhuma kama rabbayani soghiro</h6>
+    
+    <h6>“Ya Allah! ampunilah dosaku dan dosa kedua orang tuaku dan kasihilah mereka sebagaimana mereka mengasihiku sejak kecil.”</h6>
+  </ion-content>
+  <ion-footer>
+    <p>dasdas</p>
+    <ion-tabs>
+      <ion-tab-bar>
+        <ion-tab-button [routerLink]="['/home']" tab="schedule">
+          <ion-icon name="home"></ion-icon>
+          <ion-label>Home</ion-label>
+          
+        </ion-tab-button>
+    
+        <ion-tab-button [routerLink]="['/selawat']" tab="speakers">
+          <ion-icon name="newspaper"></ion-icon>
+          <ion-label>Selawat&Zikir</ion-label>
+        </ion-tab-button>
+    
+        <ion-tab-button [routerLink]="['/doamain']" tab="map">
+          <img src="assets/hands.png" width="55%">
+          <ion-label>Doa</ion-label>
+        </ion-tab-button>
+    
+        <ion-tab-button [routerLink]="['/contact']" tab="about">
+          <ion-icon name="alert-outline"></ion-icon>
+          <ion-label>Report</ion-label>
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+    </ion-footer>
+    

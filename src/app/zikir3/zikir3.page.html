@@ -1,0 +1,59 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button color="dark"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Surah Al-Fatihah</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-img src="/assets/fatihah.png"></ion-img>
+<audio src="/assets/alfatihah.mp3" controls></audio>
+Kelebihan Surah Al-Fatihah
+<br><br>
+1. SURAH PERTAMA YANG DITURUNKAN SECARA LENGKAP
+<br><br>
+2. SURAH PEMBUKA AL QURAN DAN SOLAT
+<br><br>
+3. SURAH YANG PALING AGUNG DALAM AL QURAN
+<br><br>
+4. SURAH AL FATIHAH SEBAGAI PENAWAR / PENYEMBUH PENYAKIT
+<br><br>
+5. SURAH YANG EKSLUSIF, DITURUNKAN HANYA UNTUK NABI SAW
+<br><br>
+6. SURAH YANG MENJADI RUKUN SOLAT
+<br><br>
+7. SURAH YANG DIBERI BANYAK GELARAN KERANA KEISTIMEWAANNYA
+<br><br>
+
+
+</ion-content>
+<ion-footer>
+<p>dasdas</p>
+<ion-tabs>
+  <ion-tab-bar>
+    <ion-tab-button [routerLink]="['/home']" tab="schedule">
+      <ion-icon name="home"></ion-icon>
+      <ion-label>Home</ion-label>
+      
+    </ion-tab-button>
+
+    <ion-tab-button [routerLink]="['/selawat']" tab="speakers">
+      <ion-icon name="newspaper"></ion-icon>
+      <ion-label>Selawat&Zikir</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button [routerLink]="['/doamain']" tab="map">
+      <img src="assets/hands.png" width="55%">
+      <ion-label>Doa</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button [routerLink]="['/contact']" tab="about">
+      <ion-icon name="alert-outline"></ion-icon>
+      <ion-label>Report</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
+</ion-footer>
+

@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button color="dark"></ion-back-button>
+    </ion-buttons>
+   
+    <ion-title>Zikir Isnin</ion-title>
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <video
+    autoplay muted controls
+    width="100%"
+    control="controls"
+    preload="metadata"
+    autoplay="stop"
+    webkit-playsinline="a'webkit-playsinline"
+    class="videoPlayer">
+  <source src="assets/isnin.mp4" type="video/mp4"/>
+  </video>
+  </ion-card>
+<audio src="/assets/isnin.mp3" controls></audio>
+
+"La Haula Wala Quwwata Illa Billah", maksudnya tiada daya dan kekuatan (untuk menolak sesuatu kemudaratan dan mendatangkan suatu yang manfaat) selain Allah SWT.
+<br><br>
+Fadhilat Zikir ini Rasulullah SAW bersabda maksudnya: "Siapa yang mengucapkan La Haula Wala Quwwata illa billahi, maka ia akan menjadi ubat kepada 99 penyakit. Yang paling ringan adalah kebimbangan". (Hadis Riwayat Tabrani)
+
+
+
+
+</ion-content>
+<ion-footer>
+  <p>dasdas</p>
+  <ion-tabs>
+    <ion-tab-bar>
+      <ion-tab-button [routerLink]="['/home']" tab="schedule">
+        <ion-icon name="home"></ion-icon>
+        <ion-label>Home</ion-label>
+        
+      </ion-tab-button>
+  
+      <ion-tab-button [routerLink]="['/selawat']" tab="speakers">
+        <ion-icon name="newspaper"></ion-icon>
+        <ion-label>Selawat&Zikir</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button [routerLink]="['/doamain']" tab="map">
+        <img src="assets/hands.png" width="55%">
+        <ion-label>Doa</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button [routerLink]="['/contact']" tab="about">
+        <ion-icon name="alert-outline"></ion-icon>
+        <ion-label>Report</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+  </ion-footer>
+  
